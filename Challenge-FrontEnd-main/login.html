@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Interativo</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div>
+            <nav id="barra">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./imgmahindra/mahindralogo.png" alt="Logo" />
+                        <img src="./imgmahindra/formulaelogo.png" alt="simbolo" />
+                    </a>
+                </div>
+                <ul id="itenstopo">
+                    <li><a href="corridasim.html">Corrida Simulada</a></li>
+                    <li><a href="carros.html">Carros</a></li>
+                    <li><a href="sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+                <div class="menu-hamburger">
+                    <button class="hamburger hamburger--slider" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="login-container">
+            <main>
+                <section id="login">
+                    <h2 class="escrita-login">Login</h2>
+                    <form id="loginForm">
+                        <div class="input-group">
+                            <label for="username">Usuário:</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="password">Senha:</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <button type="submit">Entrar</button>
+                    </form>
+                    <button id="registerButton">Registrar</button>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer-destaque">
+        <div>
+            <h5>2024 All rights reserved.</h5>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

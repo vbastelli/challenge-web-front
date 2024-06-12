@@ -1,0 +1,238 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+}
+
+#barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 75px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.4); 
+}
+
+#itenstopo {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    flex: 1; 
+    justify-content: center;
+}
+
+#itenstopo li {
+    display: inline-block;
+    margin-left: 30px;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+#itenstopo li:hover {
+    background-color: #9e0000;
+    border-radius: 5px;
+    padding: 15px;
+    transform: scale(1.1);
+}
+
+.menu-hamburger {
+    display: none;
+}
+
+.hamburger {
+    outline: none;
+}
+
+.nav-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-list.active {
+    display: block;
+}
+
+.nav-item {
+    margin: 20px 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.nav-item a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    transform: scale(1.1); 
+}
+
+#banner {
+    width: 100%;
+    height: 600px; 
+    overflow: hidden;
+    position: relative;
+}
+
+#banner img {
+    margin-top: 20px;
+    width: auto;
+    height: 90%;
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 1s ease-in-out; 
+    border-radius: 5%;
+}
+
+#banner img.hide {
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .menu-hamburger {
+        display: block;
+    }
+
+    #itenstopo {
+        display: none;
+    }
+
+    .hamburger.is-active + .nav-list {
+        display: block;
+    }
+}
+
+#itenstopo li a {
+    color: white; 
+}
+
+
+#game {
+    margin-top: 50px;
+    text-align: center; 
+}
+
+#track {
+    position: relative;
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 2px solid #000;
+    overflow: hidden;
+    color: white;
+}
+
+#drivers {
+    display: inline-block; 
+}
+.car {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    transition: left 0.05s;
+}
+
+#car1 {
+    left: 10px;
+    top: 40%;
+}
+
+#car2 {
+    left: 10px;
+    top: 70%;
+}
+
+#startRace, #resetRace {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #d33; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    margin-top: 20px;
+}
+
+#startRace:hover, #resetRace:hover {
+    background-color: #f55;
+}
+
+#drivers button {
+    display: block; 
+    margin: 0 auto; 
+    padding: 15px 30px;
+    font-size: 20px; 
+    background-color: #fff;
+    color: #000;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    margin-top: 20px;
+}
+
+#drivers button:hover {
+    background-color: #960000; 
+    color: #fff; 
+}
+
+#result {
+    color:white;
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.footer-destaque {
+    margin-top: 13rem;
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer-destaque h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.footer-destaque h5::before {
+    content: "© ";
+    font-size: 18px;
+}

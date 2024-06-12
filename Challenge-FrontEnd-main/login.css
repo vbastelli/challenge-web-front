@@ -1,0 +1,228 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: black;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+#barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 75px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.4);
+}
+
+#itenstopo {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+#itenstopo li {
+    display: inline-block;
+    margin-left: 30px;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#itenstopo li:hover {
+    background-color: #9e0000;
+    border-radius: 5px;
+    padding: 15px;
+    transform: scale(1.1);
+}
+
+#itenstopo li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white;
+}
+
+.menu-hamburger {
+    display: none;
+}
+
+.hamburger {
+    outline: none;
+}
+
+.nav-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-list.active {
+    display: block;
+}
+
+.nav-item {
+    margin: 20px 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+/* Main Content Area */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#login {
+    margin-top: 130px;
+    text-align: center;
+    color: #fff; /* Ensure text color is white */
+}
+
+#escrita-login{
+    color: red;
+}
+
+#login h2 {
+    font-size: 30px;
+    margin-bottom: 70px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #555;
+    color: #fff; /* Ensure text color is white */
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px; /* Limit width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+.input-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; /* Ensure text color is white */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    background-color: #444;
+    color: #fff;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #9e0000; /* Example focus color */
+}
+
+button[type="submit"], #registerButton {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #d33;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover, #registerButton:hover {
+    background-color: #f55;
+}
+
+/* Footer Styles */
+.footer-destaque {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff; /* Ensure text color is white */
+}
+
+.footer-destaque h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.footer-destaque h5::before {
+    content: "© ";
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .menu-hamburger {
+        display: block;
+    }
+
+    #itenstopo {
+        display: none;
+    }
+
+    .hamburger.is-active + .nav-list {
+        display: block;
+    }
+}
+
+#itenstopo li a {
+    color: white;
+}
